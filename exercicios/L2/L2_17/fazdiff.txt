@@ -1,0 +1,10 @@
+./L2_17 <input/test_1 >output/outprog/test_1
+./L2_17 <input/test_2 >output/outprog/test_2
+./L2_17 <input/test_3 >output/outprog/test_3
+./L2_17 <input/test_4 >output/outprog/test_4
+
+
+diff output/outprog/test_1 output/test_1
+diff output/outprog/test_2 output/test_2
+diff output/outprog/test_3 output/test_3
+diff output/outprog/test_4 output/test_4

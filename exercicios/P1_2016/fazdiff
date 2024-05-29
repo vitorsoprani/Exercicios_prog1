@@ -1,0 +1,21 @@
+gcc P1_2016_Q -o testes -lm
+
+./testes <input/test_1 >output/out_1
+./testes <input/test_2 >output/out_2
+./testes <input/test_3 >output/out_3
+./testes <input/test_4 >output/out_4
+./testes <input/test_5 >output/out_5
+./testes <input/test_6 >output/out_6
+./testes <input/test_7 >output/out_7
+./testes <input/test_8 >output/out_8
+
+diff output/out_1 output/test_1
+diff output/out_2 output/test_2
+diff output/out_3 output/test_3
+diff output/out_4 output/test_4
+diff output/out_5 output/test_5
+diff output/out_6 output/test_6
+diff output/out_7 output/test_7
+diff output/out_8 output/test_8
+
+rm testes

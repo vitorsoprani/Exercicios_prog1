@@ -1,0 +1,9 @@
+gcc P2_2018_Q3.c -o teste
+
+./teste <input/test_1 >output/out_1
+./teste <input/test_2 >output/out_2
+
+diff output/out_1 output/test_1
+diff output/out_2 output/test_2
+
+rm teste

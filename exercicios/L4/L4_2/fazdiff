@@ -1,0 +1,9 @@
+gcc L4_2.c -o teste -lm
+
+./teste <input/test_1 >output/out_1
+./teste <input/test_2 >output/out_2
+
+diff output/test_1 output/out_1
+diff output/test_2 output/out_2
+
+rm teste

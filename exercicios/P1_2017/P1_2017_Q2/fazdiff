@@ -1,0 +1,17 @@
+gcc P1_2017_Q2.c -o teste -lm
+
+./teste <input/test_1 >output/out_1
+./teste <input/test_2 >output/out_2
+./teste <input/test_3 >output/out_3
+./teste <input/test_4 >output/out_4
+./teste <input/test_5 >output/out_5
+./teste <input/test_6 >output/out_6
+
+diff output/out_1 output/test_1
+diff output/out_2 output/test_2
+diff output/out_3 output/test_3
+diff output/out_4 output/test_4
+diff output/out_5 output/test_5
+diff output/out_6 output/test_6
+
+rm teste

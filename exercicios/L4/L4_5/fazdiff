@@ -1,0 +1,7 @@
+gcc L4_5.c -o teste -lm
+
+./teste <input/test_1 >output/out_1
+
+diff output/test_1 output/out_1
+
+rm teste

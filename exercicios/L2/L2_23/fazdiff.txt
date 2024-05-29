@@ -1,0 +1,13 @@
+gcc L2_23.c -o testes
+
+./testes <input/test_1 >output/outprog/test_1
+./testes <input/test_2 >output/outprog/test_2
+./testes <input/test_3 >output/outprog/test_3
+./testes <input/test_4 >output/outprog/test_4
+
+diff output/outprog/test_1 output/test_1
+diff output/outprog/test_2 output/test_2
+diff output/outprog/test_3 output/test_3
+diff output/outprog/test_4 output/test_4
+
+rm testes
