@@ -1,0 +1,15 @@
+gcc ex_3.c -o teste
+
+./teste <Input/test_1 >Output/out_1
+./teste <Input/test_2 >Output/out_2
+./teste <Input/test_3 >Output/out_3
+./teste <Input/test_4 >Output/out_4
+./teste <Input/test_5 >Output/out_5
+
+diff Output/test_1 Output/out_1
+diff Output/test_2 Output/out_2
+diff Output/test_3 Output/out_3
+diff Output/test_4 Output/out_4
+diff Output/test_5 Output/out_5
+
+rm teste
