@@ -18,7 +18,6 @@ int main() {
 }
 
 int ComparaString(char * str1, char * str2) {
-    int iguais = 1;
     int i = 0;
 
     while (str1[i] && str2[i]) {
