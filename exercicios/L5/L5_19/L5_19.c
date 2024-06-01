@@ -24,14 +24,13 @@ int main() {
     qtdTerra = ContaTerraVisivel(h, w, img);
     printf("%d\n", qtdTerra);
 
-
-    //ImprimeMatrizChar(h, w, img);
     return 0;
 }
 
 void LeMatrizChar(int l, int c, char mat[l][c]) {
     int i, j;
 
+    //procedimento padrão para percorrer todas as posições da matriz
     for (i = 0; i < l; i++) {
         for (j = 0; j < c; j++) {
             scanf("%c", &mat[i][j]);
@@ -43,6 +42,7 @@ void LeMatrizChar(int l, int c, char mat[l][c]) {
 void ImprimeMatrizChar(int l, int c, char mat[l][c]) {
     int i, j;
 
+    //procedimento padrão para percorrer todas as posições da matriz
     for (i = 0; i < l; i++) {
         for (j = 0; j < c; j++) {
             printf("%c", mat[i][j]);
@@ -67,15 +67,20 @@ int ContaTerraVisivel(int l, int c, char mat[l][c]) {
 void SimulaMare(int tempo, int l, int c, char mat[l][c]) {
     int i, j, t;
     char proxMat[l][c];
-
+    
+    //cria uma cópia da matriz, onde serão salvas as mudanças antes de
+    //transcreve-las para a matriz principal
     CopiaMatriz(l, c, mat, proxMat);
 
+    //laço para reralizar o procedimento o numero de vezes ja definido
     for (t = 1; t <= tempo; t++) {
+        //novamente percorre todas as posições da matriz
         for (i = 0; i < l; i++) {
             for (j = 0; j < c; j++) {
                 if (TemAguaPerto(l, c, mat, i, j)) proxMat[i][j] = AGUA;
             }
         }
+        //transfere as mudanças feitas para a matriz principal
         CopiaMatriz(l, c, proxMat, mat);
     }
 }
@@ -94,6 +99,8 @@ int TemAguaPerto(int h, int w, char mat[h][w], int l, int c) {
     int i;
 
     for (i = -1; i <= 1; i += 2) {
+        //checa as posições imediatamente acima/abaixo ou imediatamente ao lado
+        //da posiçao indicada
         if (mat[l + i][c] == AGUA) return 1;
         if (mat[l][c + i] == AGUA) return 1;
     }
