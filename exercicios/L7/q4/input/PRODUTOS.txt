@@ -1,0 +1,6 @@
+5
+15 Banana 2.5 10
+8 Manteiga 6.25 12
+25 Fralda 50.0 5
+62 Refrigerante 4.75 20
+21 Cerveja 3.15 30

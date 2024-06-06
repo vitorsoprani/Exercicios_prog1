@@ -1,0 +1,13 @@
+CLIENTE 1
+Gastou 12.50 reais comprando Banana.
+Gastou 18.75 reais comprando Manteiga.
+Gastou 200.00 reais comprando Fralda.
+
+CLIENTE 2
+Gastou 91.35 reais comprando Cerveja.
+Gastou 50.00 reais comprando Manteiga.
+Não temos a quantidade suficiente de Fralda no estoque.
+Gastou 47.50 reais comprando Refrigerante.
+
+O cliente 1 gastou 231.25 reais
+O produto mais vendido foi: Cerveja

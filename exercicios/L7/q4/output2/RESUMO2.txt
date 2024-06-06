@@ -1,0 +1,12 @@
+CLIENTE 1
+Gastou 25.00 reais comprando Melancia.
+Gastou 33.00 reais comprando Biscoito.
+
+CLIENTE 2
+Gastou 55.00 reais comprando Biscoito.
+
+CLIENTE 3
+Não temos a quantidade suficiente de Melancia no estoque.
+
+O cliente 1 gastou 58.00 reais
+O produto mais vendido foi: Biscoito

@@ -1,0 +1,5 @@
+CLIENTE 1
+Gastou 10.00 reais comprando Pera.
+
+O cliente 1 gastou 10.00 reais
+O produto mais vendido foi: Pera

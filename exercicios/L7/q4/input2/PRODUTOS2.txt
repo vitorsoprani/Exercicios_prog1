@@ -1,0 +1,3 @@
+2
+1 Melancia 5 10
+2 Biscoito 5.50 20

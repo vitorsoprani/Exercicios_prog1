@@ -1,0 +1,15 @@
+Bem vindo, usuario quaparty
+Senha incorreta!
+Bem vindo, usuario gigafish
+ERROR! login loginerrado nao existe
+Bem vindo, usuario matchmob
+Bem vindo, usuario jumbpcast
+ERROR! login loginerrado nao existe
+Bem vindo, usuario bitforge
+Senha incorreta!
+ERROR! login loginerrado nao existe
+ERROR! login loginerrado nao existe
+Bem vindo, usuario gabism
+Senha incorreta!
+Bem vindo, usuario atomband
+Bem vindo, usuario whiteroad

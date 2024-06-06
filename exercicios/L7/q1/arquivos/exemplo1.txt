@@ -1,0 +1,6 @@
+Joao;23;Design
+Afonso;19;Filosofia
+Caio;20;Medicina
+Vinicius;18;Historia
+Matheus;21;Arquitetura
+Kevin;20;Geografia
