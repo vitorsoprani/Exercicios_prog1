@@ -1,4 +1,4 @@
-gcc L6_1a.c -o teste
+gcc L6_1b.c -o teste
 
 ./teste < input/test_1 >output/out_1
 echo "Teste 1:"

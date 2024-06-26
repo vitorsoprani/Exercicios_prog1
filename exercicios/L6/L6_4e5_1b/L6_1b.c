@@ -11,20 +11,27 @@ typedef struct {
 } tPacote;
 
 tPacote LePacote();
+
 void ImprimePacote(tPacote pacote);
+
+int TemErroPacote(tPacote pct);
 
 int main() {
     int qtdPacotes;
     scanf("%d\n", &qtdPacotes);
     tPacote pacotes[qtdPacotes];
-    
+
     int i;
     for (i = 0; i < qtdPacotes; i++) {
         pacotes[i] = LePacote();
     }
-    
+
     for (i = 0; i < qtdPacotes; i++) {
-        ImprimePacote(pacotes[i]);
+        if (TemErroPacote(pacotes[i])) {
+            printf("FALHA!");
+        } else {
+            ImprimePacote(pacotes[i]);
+        }
         printf("\n");
     }
 
@@ -36,23 +43,23 @@ tPacote LePacote() {
     scanf("%d ", &pct.idMensagem);
     scanf("%d ", &pct.idPacote);
     scanf("%1d", &pct.tamMensagem);
-    
+
     int i;
     /*Le a qyantidade de caracteres especificada.*/
     for (i = 0; i < pct.tamMensagem; i++) {
         scanf("%c", &pct.mensagem[i]);
     }
-    
+
     /*Adciciona p \0 no  final para transformaar em string.*/
     pct.mensagem[pct.tamMensagem] = '\0';
-    
+
     /*Apaga os demais caracteres (lixo)*/
     for (i = 1; i <= 9 - pct.tamMensagem; i++) {
         scanf("%*c");
     }
-    
+
     scanf("%d\n", &pct.codigoDeErro);
-    
+
     return pct;
 }
 
@@ -60,4 +67,19 @@ void ImprimePacote(tPacote pacote) {
     printf("PCT: ");
     printf("%d,%d,%d,", pacote.idMensagem, pacote.idPacote, pacote.tamMensagem);
     printf("%s,%d", pacote.mensagem, pacote.codigoDeErro);
+}
+
+int TemErroPacote(tPacote pct) {
+    int soma = 0;
+    soma += pct.idMensagem;
+    soma += pct.idPacote;
+    soma += pct.tamMensagem;
+
+    int i = 0;
+    while (pct.mensagem[i]) {
+        soma += (int) pct.mensagem[i];
+        i++;
+    }
+
+    return soma != pct.codigoDeErro;
 }
