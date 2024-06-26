@@ -114,6 +114,7 @@ tPonto MoveHorizontal(int c, int l, char placa[l][c], tPonto posicaoRobo, int de
     
     return posicaoRobo;
 }
+
 tPonto MoveVertical(int c, int l, char placa[l][c], tPonto posicaoRobo,int deltaY) {
     int i;
     
