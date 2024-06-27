@@ -20,7 +20,7 @@ int main() {
     char fonte[QTD_MAX_CARACTERES];
     
     int i;
-    for (int i = 0; i < qtdCasos; i++) {
+    for (i = 0; i < qtdCasos; i++) {
         scanf("%s %s\n", alvo, fonte);
         AnalisaCaso(alvo, fonte);
     }
